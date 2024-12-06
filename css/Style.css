@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
 
-
 header {
   background-color: gray;
 }
 
-.header-top{
+.header-top {
   display: flex;
   flex-wrap: wrap;
 }
@@ -19,9 +18,9 @@ header {
 
 .head-logo {
   font-size: 3rem;
-  color: green  ;
+  color: green;
   font-weight: 600;
-  letter-spacing:  1pxs;
+  letter-spacing: 1px;
   padding: 20px 0 20px 30px;
 }
 
@@ -30,27 +29,26 @@ header {
   color: black;
 }
 
-
 .navbar {
   float: right;
   bottom: 80px;
   right: 100px;
 }
 
-.section-title{
+.section-title {
   font-family: yuji;
   color: green;
 }
-.section-title h2{
+.section-title h2 {
   font-size: 80px;
   padding-left: 520px;
 }
 
-#navbarNav ul li{
- font-size: 25px;
- font-weight: 700;
- transition: background-color 0.3s ease;
- margin-right: 30px;
+#navbarNav ul li {
+  font-size: 25px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  margin-right: 30px;
 }
 
 #navbarNav ul li:hover {
@@ -58,7 +56,8 @@ header {
   border-radius: 20px;
   cursor: pointer;
 }
-#recipes{
+
+#recipes {
   padding-left: 120px;
   background-color: #f8f9fa;
 }
@@ -73,7 +72,6 @@ header {
 .button-container {
   display: flex;
   padding-left: 100px;
-
 }
 
 .filter-btn {
@@ -100,11 +98,10 @@ header {
   max-width: 300px;
   margin-bottom: 30px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  margin-bottom: 30px;
 }
 
 .Recipe-item:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -145,6 +142,7 @@ header {
   transform: translateY(-2px);
 }
 
+/* Contact Section */
 /*contact css*/
 #contact {
   border-style: solid;
@@ -157,13 +155,25 @@ header {
 }
 .contact-header h2{
   font-family: yuji;
-  border-width: 20px;
+  border-width: 20px !important;
 }
 .container ul{
   list-style: none;
   text-decoration: none;
 }
 
+.modal-content {
+  border-radius: 10px !important;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 .modal-content {
   border-radius: 10px;
 }
@@ -177,74 +187,72 @@ header {
   margin-bottom: 20px;
 }
 
-@media (max-width: 1199px) {
-  .header{
-    left: 100%;
-  }
-  .portfolio-item {
-      max-width: 100%;
-      margin-bottom: 20px;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
   }
 
-  #Portfolio h2 {
-      font-size: 2rem;
+  .head-logo {
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+
+  .navbar {
+    float: none;
+    text-align: center;
+    bottom: initial;
+    right: initial;
+  }
+
+  .section-title h2 {
+    font-size: 50px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  #recipes {
+    padding-left: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .Recipe-gallery {
+    gap: 10px;
+  }
+
+  .Recipe-item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-top p {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .head-logo {
+    font-size: 1.5rem;
+  }
+
+  #navbarNav ul li {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+
+  .section-title h2 {
+    font-size: 40px;
   }
 
   .filter-btn {
-      margin: 5px;
-      font-size: 0.9rem;
+    padding: 8px 10px;
+    font-size: 0.8rem;
   }
-}
-.content {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  text-align: center;
-}
-.social-icons a {
-  margin-right: auto;
-  font-size: 24px;
-  color: #333;
-}
-
-.social-icons a:hover {
-  color: #007bff;
-}
-
-.form-group label {
-  font-weight: bold;
-}
-
-.about-content h2{
-  font-family: yuji;
-  font-size: 50px;
-}
-
-.about-body {
-  padding-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; 
-  justify-content: center; 
-}
-
-.card-about{
-  flex: 1 1 calc(25% - 1rem);
-  max-width: 200px;
-  box-sizing: border-box; 
-}
-
-.card-text-about{
-  font-size: 15px
-}
-
-footer{
-  text-align: center;
-  color: white;
-  background-color: #333;
-  height: 80px;
-}
-
-footer p{
-  padding-top: 25px;
 }
