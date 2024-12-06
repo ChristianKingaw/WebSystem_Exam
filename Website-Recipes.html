@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasty Creations - Home</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/Style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <div class="header-top">
+        <a class="head-logo">Igo<span>Chef</span></a> 
+        <p>Your go-to website for simple and tasty recipes</p>
+    </div>
+    <!--navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<br>
+
+
+<body>
+<!-- Portfolio Section -->
+<div class="section-title">
+    <h2 class="text-center">RECIPES</h2>
+</div>
+
+<section id="recipes" class="py-5">
+        <!-- Filter Buttons -->
+    <div class="button-container">
+        <button class="btn btn-primary filter-btn" data-category="all">All</button>
+        <button class="btn btn-secondary filter-btn" data-category="Traditional">Traditional</button>
+        <button class="btn btn-secondary filter-btn" data-category="Italian">Italian</button>
+        <button class="btn btn-secondary filter-btn" data-category="Western">Western</button>
+        <button class="btn btn-secondary filter-btn" data-category="Mexican">Mexican</button>
+        <button class="btn btn-secondary filter-btn" data-category="Indian">Indian</button>
+        <button class="btn btn-secondary filter-btn" data-category="Mediterranean">Mediterranean</button>
+        <button class="btn btn-secondary filter-btn" data-category="Japanese">Japanese</button>
+        <button class="btn btn-secondary filter-btn" data-category="Thai">Thai</button>
+    </div>
+
+<div class="container">
+    <div class="row" id="Recipe-gallery">
+        <!-- Traditional Recipe -->
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Traditional">
+            <div class="card h-100">
+                <img src="https://cdn.asiatatler.com/asiatatler/sg/i/2018/11/15145004-PekingDuck28AngleView29_resized_1406x937.jpg" class="card-img-top" alt="Peking Duck">
+                <div class="card-body">
+                    <h5 class="card-title">Peking Duck</h5>
+                    <p class="card-text">Famous Chinese dish, crispy duck served with pancakes and sauce.</p>
+                    <p class="card-text">Originated: China</p>
+                    <p class="card-text">Difficulty: Easy</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Peking Duck" data-description="A traditional Chinese dish famous for its crispy skin and tender meat, served with pancakes and hoisin sauce." data-instructions="1. Preheat the oven to 375°F (190°C). 2. Rub the duck with salt, five-spice powder, and sugar. 3. Roast the duck for 1.5–2 hours, basting occasionally. 4. While the duck roasts, prepare the pancakes and hoisin sauce. 5. Once crispy, carve the duck and serve with pancakes and sauce." data-image="https://cdn1.i-scmp.com/sites/default/files/styles/1200x800/public/images/methode/2018/11/21/b681f60a-eca4-11e8-b0fe-c62dccd2d711_1280x720_192253.jpg?itok=J4vuxUug">View Details</button>
+                </div>
+            </div>
+        </div>
+`
+        <!-- Italian Recipe --> 
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Italian">
+            <div class="card h-100">
+                <img src="https://www.happyfoodstube.com/wp-content/uploads/2015/11/risotto-milanese-recipe.jpg" class="card-img-top" alt="Risotto alla Milanese">
+                <div class="card-body">
+                    <h5 class="card-title">Risotto alla Milanese</h5>
+                    <p class="card-text">Creamy rice dish flavored with saffron and broth.</p>
+                    <p class="card-text">Originated: Italy</p>
+                    <p class="card-text">Difficulty: Hard</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Risotto alla Milanese" data-description="A creamy rice dish from Milan, flavored with saffron and cooked with broth, onions, butter, and Parmesan cheese." data-instructions="1. Sauté onions in butter until soft. 2. Add rice and cook until translucent. 3. Add white wine and saffron-infused broth, one ladle at a time, stirring frequently. 4. Cook for 18-20 minutes, until the rice is tender. 5. Stir in Parmesan cheese and butter to finish." data-image="https://grantouritalia.it/wp-content/uploads/2021/04/Risotto-alla-Milanese.jpg">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Italian Recipe -->
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Italian">
+            <div class="card h-100">
+                <img src="http://d3cizcpymoenau.cloudfront.net/images/legacy/37655/SFS_spaghetti_carbonara_CLR-3.jpg" class="card-img-top" alt="Spaghetti Carbonara">
+                <div class="card-body">
+                    <h5 class="card-title">Spaghetti Carbonara</h5>
+                    <p class="card-text">Classic Italian pasta dish made with eggs, cheese, pancetta.</p>
+                    <p class="card-text">Originated: Italy</p>
+                    <p class="card-text">Difficulty: Medium</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Spaghetti Carbonara" data-description="Classic pasta made with eggs, cheese, pancetta, and black pepper, creating a creamy sauce." data-instructions="1. Cook spaghetti in salted water. 2. In a pan, cook pancetta until crispy. 3. Beat eggs and mix with grated Parmesan. 4. Combine the pasta with pancetta, then mix with the egg mixture. 5. Add reserved pasta water to create a creamy sauce." data-image="https://rms.condenast.it/rms/public/5d7/4cd/3e3/thumb_4017_1200_670_0_0_auto.jpg">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Western Recipe -->
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Western">
+            <div class="card h-100">
+                <img src="http://images.heb.com/is/image/HEBGrocery/recipe-hm-large/classic-western-burger-recipe.jpg" class="card-img-top" alt="Western Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Western Burger</h5>
+                    <p class="card-text">A classic American burger with a juicy beef patty.</p>
+                    <p class="card-text">Originated: USA</p>
+                    <p class="card-text">Difficulty: Easy</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Western Burger" data-description="A classic American dish consisting of a grilled beef patty in a bun with toppings." data-instructions="1. Shape beef patties and season with salt and pepper. 2. Grill the patties on medium-high heat for 4-5 minutes per side. 3. Toast the buns, then assemble the burger with your choice of toppings (lettuce, tomato, cheese, etc.)." data-image="http://spicysouthernkitchen.com/wp-content/uploads/bbq-burger-23.jpg">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mexican Recipe -->
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Mexican">
+            <div class="card h-100">
+                <img src="https://sweetandsavorymeals.com/wp-content/uploads/2019/03/Cheese-Quesadilla-Recipe-2-680x1020.jpg" class="card-img-top" alt="Cheese Quesadilla">
+                <div class="card-body">
+                    <h5 class="card-title">Cheese Quesadilla</h5>
+                    <p class="card-text">A simple, cheesy Mexican dish made with flour tortillas.</p>
+                    <p class="card-text">Originated: Mexico</p>
+                    <p class="card-text">Difficulty: Easy</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Cheese Quesadilla" data-description="A quick and easy dish consisting of melted cheese in a crispy tortilla." data-instructions="1. Heat a tortilla on a skillet. 2. Add cheese and fold the tortilla in half. 3. Cook for a few minutes on each side until crispy and golden. 4. Serve with salsa or guacamole." data-image="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps138176_SD143207D06_04_6b-3.jpg">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indian Recipe -->
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Indian">
+            <div class="card h-100">
+                <img src="https://dinnerthendessert.com/wp-content/uploads/2018/03/Vegetable-Biryani-.jpg" class="card-img-top" alt="Vegetable Biryani">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetable Biryani</h5>
+                    <p class="card-text">A flavorful rice dish with mixed vegetables and aromatic spices.</p>
+                    <p class="card-text">Originated: India</p>
+                    <p class="card-text">Difficulty: Medium</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Vegetable Biryani" data-description="A popular Indian rice dish made with fragrant spices, mixed vegetables, and basmati rice." data-instructions="1. Cook rice with bay leaves, cloves, and cinnamon. 2. Sauté mixed vegetables with garam masala and turmeric. 3. Layer the rice and vegetables, cooking on low heat to blend flavors." data-image="https://www.madhuseverydayindian.com/wp-content/uploads/2022/11/easy-vegetable-biryani.jpg">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mediterranean Recipe -->
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Mediterranean">
+            <div class="card h-100">
+                <img src="https://www.savingdessert.com/wp-content/uploads/2019/04/Greek-Salad-Recipe-2-800x1200.jpg" class="card-img-top" alt="Greek Salad">
+                <div class="card-body">
+                    <h5 class="card-title">Greek Salad</h5>
+                    <p class="card-text">A fresh Mediterranean salad with cucumbers, tomatoes, olives, and feta cheese.</p>
+                    <p class="card-text">Originated: Greece</p>
+                    <p class="card-text">Difficulty: Easy</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Greek Salad" data-description="A refreshing salad made with cucumbers, tomatoes, olives, red onion, and feta cheese, dressed in olive oil and herbs." data-instructions="1. Chop the vegetables and combine in a bowl. 2. Add olives, feta cheese, and oregano. 3. Drizzle with olive oil and lemon juice. 4. Toss and serve." data-image="https://www.cookingclassy.com/wp-content/uploads/2018/02/greek-salad-1.jpg">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Japanese Recipe -->
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Japanese">
+            <div class="card h-100">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.9HvbSrlbDYYhzph6mCQnRwHaHa&pid=Api&P=0&h=220" class="card-img-top" alt="Vegetarian Ramen">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Ramen</h5>
+                    <p class="card-text">A comforting Japanese noodle soup with a savory broth, vegetables, and noodles.</p>
+                    <p class="card-text">Originated: Japan</p>
+                    <p class="card-text">Difficulty: Medium</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Vegetarian Ramen" data-description="A vegetarian ramen featuring noodles, broth, tofu, and a variety of vegetables." data-instructions="1. Prepare the broth with miso and soy sauce. 2. Cook noodles in boiling water. 3. Assemble by adding the cooked noodles to the broth with vegetables and tofu." data-image="https://www.crowdedkitchen.com/wp-content/uploads/2019/03/Vegan-Ramen-4.jpg">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thai Recipe -->
+        <div class="col-md-4 col-sm-6 Recipe-item" data-category="Thai">
+            <div class="card h-100">
+                <img src="https://dinnerthendessert.com/wp-content/uploads/2018/03/Pad-Thai-Recipe-2.jpg" class="card-img-top" alt="Pad Thai">
+                <div class="card-body">
+                    <h5 class="card-title">Pad Thai</h5>
+                    <p class="card-text">A stir-fried noodle dish with shrimp, tofu, peanuts, and bean sprouts.</p>
+                    <p class="card-text">Originated: Thailand</p>
+                    <p class="card-text">Difficulty: Medium</p>
+                    <button class="btn btn-primary view-details" data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Pad Thai" data-description="A popular Thai street food made with stir-fried rice noodles, peanuts, tofu, and shrimp." data-instructions="1. Stir-fry the tofu and shrimp in oil. 2. Add cooked rice noodles and Pad Thai sauce. 3. Top with peanuts, lime juice, and bean sprouts." data-image="https://bellyfull.net/wp-content/uploads/2022/08/Chicken-Pad-Thai-blog-2.jpg">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Recipe Details -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="project-image" src="" alt="Recipe Image" class="img-fluid mb-3">
+                <h5 class="modal-title" id="projectModalLabel">Recipe Title</h5>
+                <p id="project-description">Description will go here.</p>
+                <h6>Cooking Instructions</h6>
+                <p id="project-instructions">Instructions will go here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/js.js"></script>
+<hr>
+    <section id="about" class="about-content">
+        <h2 class="text-center">About Our Website</h2>
+        <div class="about-body">
+            <div class="card-about text-bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">WHO WE ARE</h5>
+                  <p class="card-text-about">At IgoChef, we are passionate food lovers on a mission to connect people through the universal language of flavors. We believe that every dish tells a story, and our goal is to share these stories with you. From the bustling markets of Asia to the cozy kitchens of Europe, we bring the world’s most delightful recipes to your table, crafted with authenticity and love.</p>
+                </div>
+             </div>
+             <div class="card-about text-bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">WHAT WE DO</h5>
+                  <p class="card-text-about">We aim to be your trusted companion in discovering and recreating global culinary treasures. Our vision is to build a platform that inspires a community of food enthusiasts, empowering you to explore diverse cuisines with ease. Every recipe is thoughtfully curated to ensure it's easy to follow, delicious, and celebrates the rich traditions of its origin.</p>
+                </div>
+             </div>
+             <div class="card-about text-bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">WHY WE DO IT</h5>
+                  <p class="card-text-about">We believe that food has the power to unite people, spark creativity, and bring joy. By offering a gateway to explore the world's flavors, we hope to inspire unforgettable dining moments, foster appreciation for diverse cultures, and make cooking an exciting adventure for everyone. With IgoChef, the world’s kitchen is just a click away.</p>
+                </div>
+             </div>
+        </div>
+    </section>
+<hr>
+<br>
+<section id="contact" class="content">
+<div class="container">
+    <div class="contact-header">
+        <h2>Contact Us</h2>
+    </div>
+        <p>If you have any questions or suggestions, feel free to reach out to us. We're happy to hear from you!</p>
+        <div class="contact-body">
+            <ul>
+                <li>Email: contact@IgoChefrecipes.com</li>
+                <li>Phone: +63 969 157 6955</li>
+            </ul>
+
+        
+            <!-- Social Media Icons -->
+    <div class="social-icons text-center mt-4">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com" target="_blank" class="bi bi-facebook"></a>
+        <a href="https://www.twitter.com" target="_blank" class="bi bi-twitter"></a>
+        <a href="https://www.youtube.com" target="_blank" class="bi bi-youtube"></a>
+        <a href="https://www.tiktok.com" target="_blank" class="bi bi-tiktok"></a>
+        <a href="https://www.linkedin.com" target="_blank" class="bi bi-linkedin"></a>
+        <a href="https://www.instagram.com" target="_blank" class="bi bi-instagram"></a>
+    </div>
+</div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 IgoChef Recipes | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
